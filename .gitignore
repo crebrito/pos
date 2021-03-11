@@ -1,3 +1,4 @@
+writable/*
 !writable/cache/index.html
 !writable/logs/index.html
 !writable/session/index.html
