@@ -55,6 +55,18 @@
                         <a class="nav-link" href="<?= base_url() ?>/clientes">
                             <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>Clientes
                         </a>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAdmin"
+                            aria-expanded="false" aria-controls="collapseAdmin">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tools"></i></div>
+                            Administración
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseAdmin" aria-labelledby="headingOne"
+                            data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="<?= base_url() ?>/configuracion">Configuración</a>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </nav>
