@@ -1,4 +1,8 @@
-writable/*
+!writable/cache/index.html
+!writable/logs/index.html
+!writable/session/index.html
+!writable/uploads/index.html
+!writable/debugbar/.gitkeep
 .env
 
 
