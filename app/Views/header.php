@@ -1,3 +1,4 @@
+<?php $user_session = session(); ?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -23,12 +24,12 @@
         <ul class="navbar-nav ml-auto mr-md-3 my-2 my-md-0">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    aria-haspopup="true" aria-expanded="false"><?= $user_session->nombre ?> <i class="fas fa-user fa-fw"></i></a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="<?= base_url() ?>/usuarios/cambia_password">Cambiar contraseña</a>
                     <a class="dropdown-item" href="#">Activity Log</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="login.html">Logout</a>
+                    <a class="dropdown-item" href="<?= base_url() ?>/usuarios/logout">Cerrar sesión</a>
                 </div>
             </li>
         </ul>
@@ -65,6 +66,9 @@
                             data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="<?= base_url() ?>/configuracion">Configuración</a>
+                                <a class="nav-link" href="<?= base_url() ?>/cajas">Cajas</a>
+                                <a class="nav-link" href="<?= base_url() ?>/roles">Roles</a>
+                                <a class="nav-link" href="<?= base_url() ?>/usuarios">Usuarios</a>
                             </nav>
                         </div>
                     </div>
