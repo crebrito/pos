@@ -35,4 +35,13 @@ class ProductosModel extends Model
     protected $validationRules = [];
     protected $validationMessages = [];
     protected $skipValidation = false;
+
+    public function actualizaStock($id_producto, $cantidad)
+    {
+        $actual = $this->where('id', $id_producto)->first()['existencias'];
+
+        $this->set('existencias', $actual + $cantidad);
+        $this->where('id', $id_producto);
+        $this->update();
+    }
 }

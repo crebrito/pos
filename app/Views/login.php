@@ -38,7 +38,7 @@
                                         <div class="form-group">
                                             <label class="small mb-1" for="usuario">Nombre de Usuario</label>
                                             <input class="form-control py-4" id="usuario" name="usuario" type="text"
-                                                placeholder="Ingrase su Usuario" />
+                                                placeholder="Ingrese su Usuario" />
                                         </div>
                                         <div class="form-group">
                                             <label class="small mb-1" for="password">Contraseña</label>

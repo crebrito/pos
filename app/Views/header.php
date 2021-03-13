@@ -11,13 +11,13 @@
     <title>POS - CDP</title>
     <link href="<?= base_url() ?>/assets/css/styles.css" rel="stylesheet" />
     <link href="<?= base_url() ?>/assets/css/dataTables.bootstrap4.min.css" rel="stylesheet"" />
-        <script src=" <?= base_url() ?>/assets/js/all.min.js">
-    </script>
+    <script src="<?= base_url() ?>/assets/js/all.min.js"></script>
+    <script src="<?= base_url() ?>/assets/js/jquery-3.5.1.min.js"></script>
 </head>
 
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">POS - CDP</a>
+        <a class="navbar-brand" href="/">POS - CDP</a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
                 class="fas fa-bars"></i></button>
         <!-- Navbar-->
@@ -56,6 +56,19 @@
                         <a class="nav-link" href="<?= base_url() ?>/clientes">
                             <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>Clientes
                         </a>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCompras"
+                            aria-expanded="false" aria-controls="collapseCompras">
+                            <div class="sb-nav-link-icon"><i class="fas fa-cash-register"></i></div>
+                            Compras
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseCompras" aria-labelledby="headingOne"
+                            data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="<?= base_url() ?>/compras/nuevo">Nueva Compra</a>
+                                <a class="nav-link" href="<?= base_url() ?>/compras">Compras</a>
+                            </nav>
+                        </div>
                         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAdmin"
                             aria-expanded="false" aria-controls="collapseAdmin">
                             <div class="sb-nav-link-icon"><i class="fas fa-tools"></i></div>

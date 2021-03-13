@@ -12,11 +12,11 @@
 </footer>
 </div> <!-- layoutSidenav_content-->
 </div> <!-- layoutSidenav -->
-<script src="<?= base_url() ?>/assets/js/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
-<script src="<?= base_url() ?>/assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+<script src="<?= base_url() ?>/assets/js/bootstrap.bundle.min.js"></script>
 <script src="<?= base_url() ?>/assets/js/scripts.js"></script>
-<script src="<?= base_url() ?>/assets/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
-<script src="<?= base_url() ?>/assets/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+<script src="<?= base_url() ?>/assets/js/jquery.dataTables.min.js"></script>
+<script src="<?= base_url() ?>/assets/js/dataTables.bootstrap4.min.js"></script>
 <script src="<?= base_url() ?>/assets/js/datatables-demo.js"></script>
 
 <script>
